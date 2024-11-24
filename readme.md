@@ -1,98 +1,39 @@
-# Stationery Shop API
+# Bike Store API
 
 ## Overview
 
-This project implements a Stationery Shop API using **Express**, **TypeScript**, and **MongoDB** with **Mongoose** to manage stationery products and orders. It supports basic CRUD operations for products, inventory management for orders, and revenue calculation using MongoDB's aggregation pipeline. The API also includes validation for product details and order quantities to ensure data integrity.
+This project implements a **Bike Store API** using **Express**, **TypeScript**, and **MongoDB** with **Mongoose** to manage bike products, orders, and customer interactions. The API supports basic CRUD operations for products, order management with inventory updates, and calculates total sales revenue using MongoDB’s aggregation pipeline. Data validation is implemented using Mongoose schemas and Zod for added security.
 
 ---
 
 ## Features
 
-1. **CRUD Operations for Stationery Products**:
-   - Create, Read, Update, and Delete products.
-   - Data validation for product attributes using Mongoose schema validation and zod uses.
-   - Category-based search functionality for filtering products.
+1. **CRUD Operations for Bike Products**:
+
+   - Create, Read, Update, and Delete bike products.
+   - Product data validation using Mongoose schema validation and Zod.
+   - Filtering and sorting bikes by categories, price range, or brand.
 
 2. **Order Management**:
-   - Place orders for stationery products.
-   - Update product inventory on order placement.
-   - Track orders by customer email.
+
+   - Customers can place orders for bikes.
+   - Inventory management updates when orders are placed.
+   - Track orders using customer email and order IDs.
 
 3. **Revenue Calculation**:
-   - Calculate total revenue from all orders using MongoDB's aggregation pipeline.
+
+   - Calculate total sales revenue based on all orders using MongoDB's aggregation pipeline.
 
 4. **Error Handling**:
-   - Handles various error scenarios such as insufficient stock, validation failures, and product not found.
+   - Handles various error scenarios such as insufficient stock, validation errors, and product not found.
 
 ---
 
-## Installation $ Scripts
-
+## Installation & Scripts
 
 The following npm scripts are available for development, building, and running the project:
 
-
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/dev-siyamahmed/Stationery-Shop-Backend.git
-  ```
-
-
-2. `Install dependencies`
-
-```bash
-npm install
-```
-
-
-3.  ***Set up MongoDB: Ensure that MongoDB is running locally or set up a cloud database (e.g., MongoDB Atlas). Update the database URI in `.env`***
-
-
-4. `start:dev`: **Runs the application in development mode with TypeScript support, automatically restarting on changes**.
-
-
-5. **Start the server:**
-```bash
-npm run start:dev
-```
-
-
-6. `build`: Compiles the TypeScript files into JavaScript.
-```bash
-npm run build
-```
-
-
-7. `lint`: Lints the codebase using ESLint, checking for any style or syntax issues.
-
-```bash
-npm run lint
-```
-
-8. `lint:fix`: Automatically fixes linting issues where possible.
-
-```bash
-npm run lint:fix
-```
-
-
-9. `prettier`: Formats the codebase using Prettier, according to the settings in `.prettierrc` and 
-`.gitignore`.
-
-```bash
-npm run prettier
-```
-
-
-10. `prettier:fix`: Automatically formats the codebase using Prettier.
-
-```bash
-npm run prettier:fix
-```
-
-
-11. `start:prod`: Runs the application in production mode.
-  ```bash
-  npm run start:prod
-  ```
-***The server will run at `http://localhost:5000`.***
+   git clone https://github.com/parvejme24/a2-bike-store.git
+   ```
