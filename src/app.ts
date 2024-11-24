@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 // application routes
-app.use('/api/v1', productRouter);
-app.use('/api/v1', orderRouter);
+app.use('/', productRouter);
+app.use('/', orderRouter);
 
 app.get('/', (req: Request, res: Response) => {
   res.status(200).json({ message: 'Welcome to Bike Store Server' });

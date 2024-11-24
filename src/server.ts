@@ -7,7 +7,7 @@ async function main() {
     await mongoose.connect(config.database_url as string);
     console.log('Database connected successfully');
     app.listen(config.port, () => {
-      console.log(`app is listening on port ${config.port}`);
+      console.log(`Bike Store server is running at http://localhost:${config.port}`);
     });
   } catch (err) {
     console.log(err);
